@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - override /detector: ada_detect_gpt
+  - override /hardware: single_gpu
+  - override /dataset: aprdb
+
+
+dataset:
+  with_pdf: False
+
+hardware:
+  device: "cuda:0"
+
+name: "ada_gpt_basic"
+
+

@@ -1,0 +1,6 @@
+# configs/detector/dummy.yaml
+name: "dummy"
+type: "statistical"
+
+params:
+  seed: ${seed}

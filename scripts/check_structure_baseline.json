@@ -1,0 +1,1675 @@
+{
+  "meta": {
+    "date": "2026-10-19T11:25:21",
+    "git_head": "0a4ae0b",
+    "notebook_cells_unparsed": 2
+  },
+  "results": {
+    "cli": {
+      "python -m src.detector.subjectivity_aware_generation_estimator.training.gru_train experiment/train=train_sage_gru_v3 --cfg job": {
+        "detail": "",
+        "ok": true
+      },
+      "python -m src.detector.subjectivity_aware_generation_estimator.training.mlp_train experiment/train=train_sage_mlp_1 --cfg job": {
+        "detail": "",
+        "ok": true
+      },
+      "python -m src.detector.subjectivity_aware_generation_estimator.training.transformer_train experiment/train=train_sage_transformer_2_cat --cfg job": {
+        "detail": "",
+        "ok": true
+      },
+      "python -m src.evaluation.run_eval experiment/eval=sage_gru_1 --cfg job": {
+        "detail": "",
+        "ok": true
+      }
+    },
+    "commandes": {
+      "dataset_semdetect [-]": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié.",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_1": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat_3": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat_4": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat_5": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_2_cat_v2": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_v3": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_gru_v3_semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "gru_train [train] experiment/train=train_sage_transformer_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "linguistic_segmentation [-]": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié.",
+        "ok": true
+      },
+      "linguistic_segmentation [-] experiment.dataset.with_pdf=False experiment.dataset.subset_size=10000 experiment.dataset.split=calibration": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié.",
+        "ok": true
+      },
+      "linguistic_segmentation [-] experiment.dataset.with_pdf=False experiment.dataset.subset_size=10000 experiment.dataset.split=test": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié.",
+        "ok": true
+      },
+      "make_reference [-]": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié. module introuvable dans src/",
+        "ok": false
+      },
+      "mlp_train [train] experiment/train=train_sage_mlp_1": {
+        "detail": "",
+        "ok": true
+      },
+      "report_category_ablation [-]": {
+        "detail": "script sans Hydra (pycharm) : seul l'import est vérifié. ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.report_category_ablation'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "run_eval [config] experiment=simple_dummy": {
+        "detail": "MissingConfigException: In 'config': Could not find 'experiment/simple_dummy'",
+        "ok": false
+      },
+      "run_eval [config] experiment=simple_dummy experiment.dataset.with_pdf=False": {
+        "detail": "MissingConfigException: In 'config': Could not find 'experiment/simple_dummy'",
+        "ok": false
+      },
+      "run_eval [eval]": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=ada_detect_gpt_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=binocular_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=binocular_simple_full": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=binocular_simple_small": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_1": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_10_14b_oasmall": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_1_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_2": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_3": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_600_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_60_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=cristal_anchor_60_14b_oasmall": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=detect_gpt_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=fast_detect_gpt_full": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_1": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat_3": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat_4": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat_5": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_2_cat_semdetect": {
+        "detail": "MissingConfigException: In 'eval': Could not find 'experiment/eval/sage_gru_2_cat_semdetect'",
+        "ok": false
+      },
+      "run_eval [eval] experiment/eval=sage_gru_3_aprdb": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_3_semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_3_semdetect dataset.date=[2022]": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_3_semdetect dataset.exclude_ids_path=${oc.env:CACHE_DIR}/contamination/semdetect_test_vs_aprdb_calibration_2016-2021.txt": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_gru_v3_semdetect_indist": {
+        "detail": "",
+        "ok": true
+      },
+      "run_eval [eval] experiment/eval=sage_mlp_1": {
+        "detail": "",
+        "ok": true
+      },
+      "transformer_train [train] experiment/train=train_sage_transformer_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "transformer_train [train] experiment/train=train_sage_transformer_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "transformer_train [train] experiment/train=train_sage_transformer_2_cat_3": {
+        "detail": "",
+        "ok": true
+      }
+    },
+    "imports": {
+      "src": {
+        "detail": "",
+        "ok": true
+      },
+      "src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data.dataloader": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data.dataset_aprdb": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data.dataset_factory": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data.dataset_openturingbench": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data.dataset_semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data_analyse": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data_analyse.aprb_analyse": {
+        "detail": "",
+        "ok": true
+      },
+      "src.data_analyse.aprb_analyse.aprb_utils": {
+        "detail": "OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.",
+        "ok": false
+      },
+      "src.detector": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt.BSpline": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt.ada_detect_gpt": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt.helper": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt.nuisance_func": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.ada_detect_gpt.nuisance_func_human": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.base": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.binocular": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.cristal_anchor": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.cristal_anchor.cristal_anchor": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.cristal_anchor.embedding_model": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.cristal_anchor.fetch_academic_paper": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.cristal_anchor.finetuning_anchor": {
+        "detail": "non importé : effets de bord dangereux (NEVER_IMPORT)",
+        "ok": true
+      },
+      "src.detector.cristal_anchor.script_fetch_paper": {
+        "detail": "non importé : effets de bord dangereux (NEVER_IMPORT)",
+        "ok": true
+      },
+      "src.detector.detect_gpt": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.detector_factory": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.detector_utils": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.fast_detect_gpt": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.random_base_detector": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.claims_llm": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.feature_store": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.llm_jobs": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.references": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.claim_extractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.classifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.config": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.embedding_generator": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.feature_builder": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.pipeline": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers.base": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers.bedrock": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers.gemini": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers.litellm": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.providers.openai_provider": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.report": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.review_cleaner": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.review_generator": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.semdetect.textual_features": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.sem_detect.text_cleaning": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.features": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.features.feature_spec": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.features.pairing": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.features.tensor_builder": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.linguistic_utils": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.model": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.model.SimpleGRU": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.model.SimpleGRUWithGlobal": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.model.SubjTransformer": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.model.artifact_io": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.sage": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.sage.old": {
+        "detail": "nom de fichier non importable comme module",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training.gru_features": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training.gru_train": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training.linguistic_segmentation": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training.mlp_train": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.training.transformer_train": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.category_permutation": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.ablation": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.ablation'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.accuracy_shapley": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.accuracy_shapley'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.category_ablation": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.category_ablation'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.category_profile": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.category_profile'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.lofo_conditions": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.lofo_conditions'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.lofo_run": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.lofo_run'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.metric_comparison": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.metric_comparison'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.normalize_segmentation": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.normalize_segmentation'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.order": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.order'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.order_lofo": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.order_lofo'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.order_study": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.order_study'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.position_probe": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.position_probe'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.report_category_ablation": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.report_category_ablation'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.result_store": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.result_store'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.stratified_shapley": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.stratified_shapley'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.direction.text_normalization": {
+        "detail": "ModuleNotFoundError: No module named 'src.detector.subjectivity_aware_generation_estimator.xai.direction.text_normalization'; 'src.detector.subjectivity_aware_generation_estimator.xai.direction' is not a package",
+        "ok": false
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.experiments": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.export_accuracy": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.export_common": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.export_figures": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.export_latex": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.lofo_resample": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.metrics": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.notebook_display": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.order_perturbation": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.reporting": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.results_store": {
+        "detail": "",
+        "ok": true
+      },
+      "src.detector.subjectivity_aware_generation_estimator.xai.sources": {
+        "detail": "",
+        "ok": true
+      },
+      "src.evaluation": {
+        "detail": "",
+        "ok": true
+      },
+      "src.evaluation.eval_engine": {
+        "detail": "",
+        "ok": true
+      },
+      "src.evaluation.eval_utils": {
+        "detail": "",
+        "ok": true
+      },
+      "src.evaluation.metrics": {
+        "detail": "",
+        "ok": true
+      },
+      "src.evaluation.run_eval": {
+        "detail": "",
+        "ok": true
+      },
+      "src.utils.vllm_manager": {
+        "detail": "",
+        "ok": true
+      }
+    },
+    "notebooks": {
+      "data/OTB_dataset_downloader.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprbd_extract_for_ada.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprbd_extract_for_ada.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprbd_extract_for_ada.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_Audit.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_Audit.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_Audit.ipynb :: src.data_analyse.aprb_analyse.aprb_utils import *": {
+        "detail": "OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.",
+        "ok": false
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_exploration.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_exploration.ipynb :: src.data_analyse.aprb_analyse.aprb_utils import *": {
+        "detail": "OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.",
+        "ok": false
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_extract_hwt.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "data/ai-peer-review-detection-benchmark/aprdb_extract_hwt.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/dataset/dataset_exploration_otb.ipynb :: src.config import DATA_HWT_PATH": {
+        "detail": "nom absent du module : DATA_HWT_PATH",
+        "ok": false
+      },
+      "notebook/dataset/fetching_paper.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/dataset/openreview_api_testing.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/dataset/openreview_api_testing.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/dataset/openreview_api_testing.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor.ipynb :: src.detector.cristal_anchor.fetch_academic_paper import extract_text_from_pdf": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor_ibm.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor_ibm.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor_ibm.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_anchor_ibm.ipynb :: src.detector.cristal_anchor.fetch_academic_paper import extract_text_from_pdf": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_proximity.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_proximity.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_proximity.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/evaluating_proximity.ipynb :: src.detector.cristal_anchor.fetch_academic_paper import extract_text_from_pdf": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/llm_exploration.ipynb :: src.detector.detector_utils import from_pretrained": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/llm_exploration.ipynb :: src.detector.detector_utils import huggingface_config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_binocular_pipeline.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_binocular_pipeline.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_binocular_pipeline.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_binocular_pipeline.ipynb :: src.detector.detector_factory import detector_factory": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_binocular_pipeline.ipynb :: src.evaluation.eval_engine import Evaluator": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_fast_detect_gpt_pipeline.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_fast_detect_gpt_pipeline.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_fast_detect_gpt_pipeline.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_fast_detect_gpt_pipeline.ipynb :: src.detector.detector_factory import detector_factory": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/run_fast_detect_gpt_pipeline.ipynb :: src.evaluation.eval_engine import Evaluator": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/detector/similarity_check.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_evaluation-pmc.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_evaluation-pmc.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_evaluation_gru.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_evaluation_gru.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_results.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.config": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.data.dataloader import data_loader": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation.ipynb :: src.detector.cristal_anchor.fetch_academic_paper import extract_text_from_pdf": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation_2.ipynb :: src.config import DATA_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation_2.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/linguistic/linguistic_segmentation_2.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.references import fixed_models_references": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.semdetect.classifier import FEATURE_DISPLAY_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.sem_detect.text_cleaning import CLEANERS": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.detector.subjectivity_aware_generation_estimator.sage import SageGRU": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/hybrid_svm.ipynb :: src.evaluation.eval_utils import generate_config_hash": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/result_experiments.ipynb :: src.config import HYDRA_CONFIG_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/result_experiments.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/result_experiments.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/result_exploitation.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/result_exprolation.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.references import fixed_models_references": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.semdetect.classifier import FEATURE_DISPLAY_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.sem_detect.text_cleaning import CLEANERS": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.detector.subjectivity_aware_generation_estimator.sage import SageGRU": {
+        "detail": "",
+        "ok": true
+      },
+      "notebook/results/semdetect_sage_recap.ipynb :: src.evaluation.eval_utils import generate_config_hash": {
+        "detail": "",
+        "ok": true
+      },
+      "src/data/diag_semdetect.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/data/diag_semdetect.ipynb :: src.data.dataset_semdetect import CONFERENCES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/data/diag_semdetect.ipynb :: src.data.dataset_semdetect import REPO_ID": {
+        "detail": "",
+        "ok": true
+      },
+      "src/data/diag_semdetect.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/data/diag_semdetect.ipynb :: src.data.dataset_semdetect import YEARS": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.detector.sem_detect.feature_store import parse_claims": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import CLAIM_CATEGORIES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import SEMANTIC_CATEGORIES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_claims_local.ipynb :: src.utils.vllm_manager import VLLMManager": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.feature_store import migrate_legacy_store": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.semdetect.classifier import FEATURE_DISPLAY_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.evaluation.metrics import get_tpr_at_fpr": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e1.ipynb :: src.utils.vllm_manager import VLLMManager": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.feature_store import parse_claims": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.llm_jobs import LocalReviewCleaner": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.llm_jobs import LocalReviewGenerator": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.references import fixed_models_references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import CLAIM_CATEGORIES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import SEMANTIC_CATEGORIES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.semdetect.classifier import FEATURE_DISPLAY_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.evaluation.metrics import get_tpr_at_fpr": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e2.ipynb :: src.utils.vllm_manager import VLLMManager": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.claims_llm import LocalClaimExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.semdetect.classifier import FEATURE_DISPLAY_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.semdetect.review_cleaner import strip_markdown": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.detector.sem_detect.text_cleaning import CLEANERS": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.evaluation.metrics import get_tpr_at_fpr": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_e3.ipynb :: src.utils.vllm_manager import VLLMManager": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.feature_store import SemDetectFeatureStore": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.references import _stable_unit": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.references import build_feature_matrix": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.references import paper_protocol_references": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.references import predict_proba": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_repro.ipynb :: src.evaluation.metrics import get_tpr_at_fpr": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.data.dataset_semdetect import SemDetectDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import CLAIM_CATEGORIES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.claim_extractor import ClaimExtraction": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.classifier import CLASS_NAMES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.classifier import SemDetectClassifier": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.embedding_generator import EmbeddingGenerator": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.feature_builder import build_feature_vector": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.feature_builder import get_semantic_embeddings": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/sem_detect/notebook/semdetect_smoke.ipynb :: src.detector.sem_detect.semdetect.textual_features import TextualFeatureExtractor": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/sage_results.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/sage_results.ipynb :: src.data.dataset_aprdb import AprdbDataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.feature_spec import SPECS": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.feature_spec import get_spec": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.tensor_builder import build_dataset": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.tensor_builder import fit_context": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.model.SimpleGRU import SimpleGRU": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.training.gru_train import prepare_data": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.training.gru_train import train_model": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.category_permutation import ALL": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.category_permutation import fit_marginals": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.category_permutation import resample_category": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.category_permutation import resample_subjectivity": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.direction import convert_toward": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.direction import subjectivity_pools": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.export_common import latest_store": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.export_figures import comparison_plot": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.export_figures import importance_plot": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.export_figures import multi_metric_plot": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.export_latex import export_all": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.lofo_resample import noise_conditions": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.metrics import detection_metrics": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.notebook_display import show_all": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.order_perturbation import reverse_within_review": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.order_perturbation import shuffle_within_review": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.reporting import print_table": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.results_store import PROTO_PAIRED": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.results_store import load": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.results_store import record_metrics": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.results_store import record_run": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.results_store import summary": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.sources import SOURCES": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/tests/results_xai.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.sources import bibliography": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.config import PROJ_ROOT": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.feature_spec import SPECS": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.features.feature_spec import get_spec": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.training.gru_train import prepare_data": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.training.gru_train import train_gru": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.metrics import detection_metrics": {
+        "detail": "",
+        "ok": true
+      },
+      "src/detector/subjectivity_aware_generation_estimator/training/training_gru.ipynb :: src.detector.subjectivity_aware_generation_estimator.xai.reporting import print_table": {
+        "detail": "",
+        "ok": true
+      },
+      "src/results_exploration/detector_comparison.ipynb :: src.config import RESULT_DIR": {
+        "detail": "",
+        "ok": true
+      }
+    },
+    "presets": {
+      "experiment/eval=ada_detect_gpt_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=ada_detect_gpt_simple_gemma_identity": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=binocular_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=binocular_simple_full": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=binocular_simple_small": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_1": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_10_14b_oasmall": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_1_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_3": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_600_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_60_14b": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=cristal_anchor_60_14b_oasmall": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=detect_gpt_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=fast_detect_gpt_full": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=fast_detect_gpt_simple": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_1": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2_cat_3": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2_cat_4": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_2_cat_5": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_3_aprdb": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_3_semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_gru_v3_semdetect_indist": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/eval=sage_mlp_1": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_1": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_3": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_4": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_5": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_merged": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_2_cat_v2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_v3": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_gru_v3_semdetect": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_mlp_1": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_transformer_2_cat": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_transformer_2_cat_2": {
+        "detail": "",
+        "ok": true
+      },
+      "experiment/train=train_sage_transformer_2_cat_3": {
+        "detail": "",
+        "ok": true
+      }
+    }
+  }
+}

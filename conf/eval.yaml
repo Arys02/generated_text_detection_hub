@@ -1,0 +1,12 @@
+# conf/eval.yaml
+defaults:
+  - _self_
+  - hardware: single_gpu
+  - dataset: aprdb
+  - data_loader: default
+  - detector: dummy
+  - experiment/eval: null
+  - override hydra/job_logging: default
+
+name: "evaluation run"
+seed: 42

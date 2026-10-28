@@ -1,0 +1,10 @@
+name: "aprdb"
+description: "dataset for AI Peer Review Detection Benchmarks using the test subset and mixing all the datas into just two labels : mgt and hwt"
+
+conference: null
+date: null
+keep_meta: True
+subset_size: 10000
+split: "test"
+with_pdf: False
+seed: ${..seed}

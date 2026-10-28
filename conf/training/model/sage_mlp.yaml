@@ -1,0 +1,12 @@
+# TODO
+name: "sage_mlp"
+method: "calibration"          # discriminant lu par train.py pour router
+params:
+  hidden_layer_sizes: [16, 8]
+  activation: "relu"
+  solver: "adam"
+  alpha: 1e-4
+  early_stopping: True
+  n_iter_no_change: 50
+  max_iter: 5000
+  random_state: 42

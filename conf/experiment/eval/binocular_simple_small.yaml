@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+  - override /detector: binocular
+  - override /hardware: dual_gpu
+  - override /dataset: aprdb
+
+hardware:
+  device: "cuda:1"
+
+detector:
+  params:
+    observer_name: "tiiuae/Falcon3-1B-Base"
+    performer_name: "tiiuae/Falcon3-1B-Instruct"
+    max_token_observed: 512
+    mode: "low-fpr"
+    device1: "cuda:1"
+    device2: "cuda:1"
+    threshold: 0.8536432310785527
+
+dataset:
+  with_pdf: False
+
+
+name: "binocular with a simple gpu"

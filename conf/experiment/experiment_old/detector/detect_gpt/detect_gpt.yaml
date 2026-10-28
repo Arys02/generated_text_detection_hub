@@ -1,0 +1,12 @@
+name: "detect_gpt"
+type: "statistical"
+
+params:
+  scoring_model_name: "gpt2-xl"
+  n_perturbation: 100
+  mask_filling_model_name: "t5-3b"
+  pct_words_masked: 0.3
+  span_length: 2
+
+  mask_top_p: 1.0
+  device: ${...device}

@@ -1,0 +1,11 @@
+# conf/detector/sage.yaml
+name: "sage"
+type: "linguistic"
+trainable: true
+
+params:
+  device: ${hardware.device}
+  seed: ${seed}
+  model_meta : null
+  model_hash : null
+

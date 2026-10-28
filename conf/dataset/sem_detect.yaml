@@ -1,0 +1,36 @@
+# conf/dataset/sem_detect.yaml
+name: "sem_detect"
+description: "Sem-Detect ML Conferences Peer-Reviews (ICLR/NeurIPS 2021-2022), human / rewrite / ai"
+repo_id: "Sem-Detect/ML_Conferences-Peer-Reviews"
+
+# "train" | "test" | ["train", "test"]  -> colonne `split` (partition papier 80/20, seed=42 côté auteurs)
+split: "test"
+
+# null = tout ; sinon sous-ensemble de ["ICLR", "NeurIPS"]
+conference: null
+# null = tout ; sinon sous-ensemble de ["2021", "2022"]
+date: null
+# null = tous ; sinon liste de valeurs `author` à garder pour ai/rewrite (les humains sont toujours conservés)
+# valeurs : gemini-2.5-flash | gemini-2.5-pro | deepseek.v3-v1:0 | qwen.qwen3-235b-a22b-2507-v1:0
+generator: null
+
+# human_vs_ai | ai_vs_rest | human_vs_llm | three_class
+label_mode: "human_vs_ai"
+
+# uniform : n_par_classe = min(subset_size // n_classes, taille de la plus petite classe)
+# none    : distribution naturelle (subset_size -> échantillonnage stratifié proportionnel)
+balance: "none"
+subset_size: null
+
+no_duplicate: true
+keep_meta: true
+# jointure avec la config `papers` (texte du PDF parsé) pour les détecteurs contextuels
+with_paper: false
+# garder la colonne `claim_extraction` (JSON, ~3,8k caractères/ligne en moyenne)
+keep_claims: false
+seed: 0
+revision: "18b74b551670bff6b04e57570232a1694997863b"
+exclude_ids_path: null
+# fraction des PAPIERS du train réservée à la validation (split virtuel "val") ; null = pas de validation
+val_fraction: null
+val_seed: 0

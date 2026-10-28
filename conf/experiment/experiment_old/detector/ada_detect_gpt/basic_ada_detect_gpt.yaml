@@ -1,0 +1,11 @@
+name: "ada_detect_gpt"
+type: "statistical"
+
+params:
+  train_dataset: "aprbd_training_ada"
+  w_func: "identity"
+  scoring_model_name: "google/gemma-2-9b"
+  sampling_model_name: "google/gemma-2-9b-it"
+  burn_in: 0.0
+  device: ${...device}
+  seed: ${...seed}

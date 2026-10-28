@@ -1,0 +1,28 @@
+# @package _global_
+defaults:
+  - override /detector: binocular
+  - override /hardware: dual_gpu
+  - override /dataset: aprdb
+
+hardware:
+  device: "cuda:1"
+
+dataset:
+  split: "test"
+  subset_size: 10000
+  conference: null
+  date: null
+  keep_meta: true
+  with_pdf: false
+
+detector:
+  params:
+    observer_name: "tiiuae/falcon-7b"
+    performer_name: "tiiuae/falcon-7b-instruct"
+    max_token_observed: 512
+    mode: "low-fpr"
+    device1: "cuda:1"
+    device2: "cuda:1"
+    threshold: 0.8536432310785527
+
+name: "binocular with falcon-7b"

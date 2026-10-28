@@ -1,0 +1,28 @@
+# @package _global_
+
+# conf/experiment/eval/cristal_anchor_60_14b_oasmall.yaml
+defaults:
+  - override /detector: cristal_anchor
+  - override /hardware: single_gpu
+  - override /dataset: aprdb
+  - override /data_loader: default
+
+hardware:
+  device: "cuda:1"
+
+
+detector:
+  params:
+    model_name: "qwen3-14b"
+    embedder_name: "text-embedding-3-small"
+
+dataset:
+  split: "test"
+  subset_size: 60
+  conference: null
+  date: null
+  keep_meta: true
+  with_pdf: true
+
+name: "cristal_anchor_60_14b_oasmall"
+

@@ -1,0 +1,12 @@
+# TODO
+name: "sage_gru_1"
+method: "training"          # discriminant lu par train.py pour router
+params_model:
+  hidden: 32
+  n_layers: 1
+
+params_training:
+  epochs: 15
+  lr: 1e-3
+
+batch_size: 64

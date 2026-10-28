@@ -1,0 +1,4 @@
+# conf/data_loader/default.yaml
+batch_size: 1
+num_workers: 4
+pin_memory: true

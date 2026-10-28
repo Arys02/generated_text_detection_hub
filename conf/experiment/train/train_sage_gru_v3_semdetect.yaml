@@ -1,0 +1,50 @@
+# @package _global_
+
+# file: conf/experiment/train/train_sage_gru_v3_semdetect.yaml
+defaults:
+  - override /hardware: single_gpu
+  - override /dataset@dataset_train: sem_detect
+  - override /dataset@dataset_val: sem_detect
+  - override /training/split: predefined
+  - override /training/model: sage_gru_1
+
+dataset_train:
+  split: "train"
+  label_mode: "human_vs_ai"
+  balance: "paired"
+  val_fraction: 0.1
+  val_seed: 0
+  seed: 0
+
+dataset_val:
+  split: "val"
+  label_mode: ${dataset_train.label_mode}
+  balance: "paired"
+  val_fraction: ${dataset_train.val_fraction}
+  val_seed: ${dataset_train.val_seed}
+  seed: 0
+
+hardware:
+  device: "cuda:0"
+
+training:
+  model:
+    feature_spec: "v3_multi_novalid"   # identique au modèle APRDB : seule la source des données change
+
+    feature_version:
+      segmentation: 2
+      subj_category: ['Assertion', 'Expressive', 'Question', 'Suggestion']
+
+    params_model:
+      n_features: 6
+      hidden: 32
+      n_layers: 1
+
+    params_training:
+      epochs: 30
+      lr: 1e-3
+
+    batch_size: 64
+    seed: 0
+
+name: "gru"

@@ -1,0 +1,8 @@
+name: "fast_detect_gpt"
+type: "statistical"
+
+params:
+  scoring_model_name: "gpt2-xl"
+  sampling_model_name: "gpt2-xl"
+  discrepancy_analytic: "True"
+  device: ${...device}

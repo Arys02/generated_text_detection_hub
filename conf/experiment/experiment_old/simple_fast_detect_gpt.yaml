@@ -1,0 +1,9 @@
+defaults:
+  - dataset/aprbd@dataset: aprdb_tt_test
+  - detector/fast_detect_gpt@detector: fast_detect_gpt_discepance_false
+  - data_loader: 1_4_true
+  - _self_
+
+name: "simple test with fast-detect-gpt detector and small database"
+device: "cuda"
+seed: 43

@@ -1,0 +1,11 @@
+name: "binocular"
+type: "statistical"
+
+
+params:
+  observer_name: "tiiuae/falcon-7b"
+  performer_name: "tiiuae/falcon-7b-instruct"
+  max_token_observed: 512
+  mode: "low-fpr"
+
+  seed: ${...seed} # Réutilise la seed globale

@@ -1,0 +1,20 @@
+name: "cristal_anchor"
+type: "contextual"
+
+
+params:
+  model_name: "qwen3-8b"
+  embedder_name: "all-MiniLM-L6-v2"
+  seed: ${...seed} # Réutilise la seed globale
+
+params_generate_review:
+  temperature: 0.7
+  max_token: 4096
+  enable_thinking: False
+  top_p: 0.95
+  top_k: 20
+
+params_reverse_prompt:
+  enable_thinking: True
+  temperature: 0.6
+  max_token: 20000

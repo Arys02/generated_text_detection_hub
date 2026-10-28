@@ -1,0 +1,9 @@
+defaults:
+  - dataset/aprbd@dataset: aprdb_tt_test
+  - detector/binocular@detector: binocular_1gpu_threshold_1
+  - data_loader: 1_4_true
+  - _self_
+
+name: "simple test with binocular detector and small database (size 100)"
+device: "cuda"
+seed: 42

@@ -1,0 +1,7 @@
+defaults:
+  - model: nlp
+  -
+  - _self_
+
+debug: false
+seed: 42

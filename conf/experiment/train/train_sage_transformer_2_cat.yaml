@@ -1,0 +1,40 @@
+# @package _global_
+# conf/experiment/train/train_sage_transformer_2_cat.yaml
+defaults:
+  - override /hardware: single_gpu
+  - override /training/split: predefined
+  - override /training/model: sage_transformer_2
+
+dataset_train:
+  with_pdf: False
+  split: "calibration"
+  subset_size: 10000
+
+dataset_val:
+  with_pdf: False
+  split: "test"
+  subset_size: 10000
+
+hardware:
+  device: "cuda:1"
+
+training:
+  model:
+    params_model:
+      d_model: 16          # -> 24 si SimpleGRU est bidirectionnel
+      nhead: 2
+      num_layers: 1
+      pooling: attention
+      pos_encoding: sinusoidal
+
+    feature_version:
+      segmentation: 2
+      subj_category: ['Assertion', 'Expressive', 'Question', 'Suggestion']
+
+    params_training:
+      epochs: 30
+      lr: 1e-3
+
+    batch_size: 64
+
+name: "transformer"

@@ -1,0 +1,18 @@
+# conf/global.yaml — point d'entrée unique train+eval
+defaults:
+  - _self_
+  - hardware: single_gpu
+  - detector: dummy
+  - dataset@train.dataset: aprdb     # le dossier dataset/, monté sous train.dataset
+  - dataset@eval.dataset: aprdb      # ...et sous eval.dataset
+  - training/model@train.model: sage_mlp
+  - experiment/global: null
+  - override hydra/job_logging: default
+
+name: "global run"
+seed: 42
+with_training: True
+
+hydra:
+  run:
+    dir: ${oc.env:CACHE_DIR}/outputs/global/${detector.name}/${now:%Y-%m-%d_%H-%M-%S}

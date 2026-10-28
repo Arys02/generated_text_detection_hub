@@ -1,0 +1,14 @@
+# conf/train.yaml
+defaults:
+  - _self_
+  - hardware: single_gpu
+  - dataset@dataset_val: aprdb
+  - dataset@dataset_train: aprdb
+  - data_loader: default
+  - training/split: predefined
+  - training/model: sage_mlp
+  - experiment/train: null      # preset optionnel, surcharge tout ce qui précède
+  - override hydra/job_logging: default
+
+name: "train run"
+seed: 42

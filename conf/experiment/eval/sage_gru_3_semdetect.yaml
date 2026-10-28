@@ -1,0 +1,27 @@
+# @package _global_
+
+# conf/experiment/eval/sage_gru_3_cat_semdetect.yaml
+defaults:
+  - override /detector: sage
+  - override /hardware: single_gpu
+  - override /dataset: sem_detect
+  - override /data_loader: default
+
+hardware:
+  device: "cuda:1"
+
+data_loader:
+  batch_size: 500
+
+dataset:
+  split: "test"
+  label_mode: "human_vs_ai"
+  balance: "none"
+  subset_size: null
+  conference: null
+  date: null
+  keep_meta: true
+  with_paper: false
+
+train_preset: "train_sage_gru_v3"
+name: "sage_gru_3_semdetect"

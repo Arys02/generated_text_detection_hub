@@ -1,0 +1,13 @@
+# conf/detector/binocular.yaml
+name: "binocular"
+type: "statistical"
+trainable: false
+
+params:
+  observer_name: "tiiuae/falcon-7b"
+  performer_name: "tiiuae/falcon-7b-instruct"
+  max_token_observed: 512
+  mode: "low-fpr"          # override CLI: detector.params.mode=high-fpr
+  device1: ${hardware.device1}
+  device2: ${hardware.device2}
+  seed: ${seed}

@@ -1,0 +1,5 @@
+defaults:
+  - experiment: simple_anchor
+  - _self_
+
+debug: false

@@ -1,0 +1,41 @@
+# @package _global_
+#conf/experiment/train/train_sage_mlp_1.yaml
+defaults:
+  - override /hardware: single_gpu
+  - override /training/split: predefined
+  - override /training/model: sage_gru_1
+
+dataset_train:
+  with_pdf: False
+  split: "calibration"
+  subset_size: 10000
+
+dataset_val:
+  with_pdf: False
+  split: "test"
+  subset_size: 10000
+
+hardware:
+  device: "cuda:1"
+
+training:
+  model:
+    params_model:
+      n_features: 7
+      hidden: 32
+      n_layers: 1
+
+    feature_version:
+      segmentation: 2
+      subj_category: ['Expressive', 'Question', 'Suggestion']
+
+    params_training:
+      epochs: 30
+      lr: 1e-3
+
+    batch_size: 64
+
+name: "gru"
+
+
+

@@ -1,0 +1,9 @@
+defaults:
+  - dataset/aprbd@dataset: aprdb_tt_test
+  - detector/ada_detect_gpt@detector: basic_ada_detect_gpt_falcon_pretrained
+  - data_loader: 1_4_true
+  - _self_
+
+name: "simple test with ada-detect-gpt detector and small database"
+device: "cuda:0"
+seed: 43

@@ -1,0 +1,26 @@
+# @package _global_
+
+# conf/experiment/eval/sage_gru_3_aprdb.yaml
+defaults:
+  - override /detector: sage
+  - override /hardware: single_gpu
+  - override /dataset: aprdb
+  - override /data_loader: default
+
+hardware:
+  device: "cuda:1"
+
+data_loader:
+  batch_size: 500
+
+dataset:
+  split: "test"
+  subset_size: 10000
+  conference: null
+  date: null
+  keep_meta: true
+  with_pdf: false
+
+
+train_preset: "train_sage_gru_v3"
+name: "sage_gru_3_aprdb"

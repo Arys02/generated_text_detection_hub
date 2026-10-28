@@ -1,0 +1,7 @@
+# configs/detector/dummy.yaml
+name: "dummy"
+type: "statistical"
+
+params:
+  # Pas de paramètres complexes pour le dummy, mais on pourrait mettre :
+  seed: ${...seed} # Réutilise la seed globale

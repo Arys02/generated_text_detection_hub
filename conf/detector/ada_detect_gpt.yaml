@@ -1,0 +1,14 @@
+# conf/detector/ada_detect_gpt.yaml
+name: "ada_detect_gpt"
+type: "statistical"
+trainable: true
+
+params:
+  scoring_model_name: "tiiuae/falcon-7b"
+  sampling_model_name: "tiiuae/falcon-7b"
+  w_func: "identity"
+  burn_in: 0.0
+  device: ${hardware.device}
+  seed: ${seed}
+  # artefact produit par train.py, consommé à l'éval. null = pas encore entraîné
+  checkpoint_path: null

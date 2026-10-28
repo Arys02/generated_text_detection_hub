@@ -1,0 +1,6 @@
+# conf/split/holdout_02.yaml
+strategy: "holdout"
+test_size: 0.2
+shuffle: true
+stratify: true           # préserve le ratio mgt/hwt — critique en classification déséquilibrée
+seed: ${seed}

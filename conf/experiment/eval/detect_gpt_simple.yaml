@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - override /detector: detect_gpt
+  - override /hardware: single_gpu
+  - override /dataset: aprdb
+
+
+dataset:
+  with_pdf: False
+
+hardware:
+  device: "cuda:0"
+
+name: "detect_gpt_gpu1"

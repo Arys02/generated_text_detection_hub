@@ -1,0 +1,10 @@
+# conf/dataset/aprdb.yaml
+name: "aprdb"
+description: "AI Peer Review Detection Benchmark, test subset, binaire mgt/hwt"
+conference: null
+date: null
+keep_meta: true
+subset_size: 100
+split: "test"
+with_pdf: false
+seed: 0

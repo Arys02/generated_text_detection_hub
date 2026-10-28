@@ -1,0 +1,7 @@
+name: "E0_TuringTest"
+description: "Standard turingtest for experiment testing"
+
+num_classes_aa : 8
+num_aa_classes: 8
+task: "TT"
+split: "test"

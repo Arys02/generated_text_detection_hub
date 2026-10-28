@@ -1,0 +1,23 @@
+# conf/training/model/sage_transformer_2.yaml
+name: transformer
+batch_size: 64
+seed: 0
+dev_frac: 0.0
+feature_version:
+  segmentation: 1
+params_model:
+  d_model: 16
+  nhead: 2
+  num_layers: 1
+  ff_mult: 4
+  dropout: 0.1
+  input_dropout: 0.0
+  pooling: attention
+  pos_encoding: sinusoidal
+params_training:
+  epochs: 30
+  lr: 1e-3
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  grad_clip: 1.0
+  patience: null

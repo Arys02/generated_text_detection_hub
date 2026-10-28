@@ -1,0 +1,2 @@
+# conf/split/predefined.yaml
+strategy: "predefined"   # le code charge dataset_train et dataset_eval tels quels

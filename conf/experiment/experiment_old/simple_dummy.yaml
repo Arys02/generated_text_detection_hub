@@ -1,0 +1,9 @@
+defaults:
+  - dataset/aprbd@dataset: aprdb_tt_test
+  - detector/dummy@detector: dummy
+  - data_loader: 1_4_true
+  - _self_
+
+name: "simple test with dummy detector and small database"
+device: "cuda"
+seed: 42

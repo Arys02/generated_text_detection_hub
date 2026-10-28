@@ -1,0 +1,36 @@
+# @package _global_
+#conf/experiment/train/train_sage_mlp_1.yaml
+defaults:
+  - override /hardware: single_gpu
+  - override /training/split: predefined
+  - override /training/model: sage_mlp
+
+dataset_train:
+  with_pdf: False
+  split: "calibration"
+  subset_size: 1000
+
+dataset_val:
+  with_pdf: False
+  split: "test"
+  subset_size: 1000
+
+hardware:
+  device: "cuda:0"
+
+training:
+  model:
+    params:
+      hidden_layer_sizes: [16, 8]
+      activation: "relu"
+      solver: "adam"
+      alpha: 1e-4
+      early_stopping: True
+      n_iter_no_change: 50
+      max_iter: 5000
+      random_state: 42
+
+name: "mlp"
+
+
+

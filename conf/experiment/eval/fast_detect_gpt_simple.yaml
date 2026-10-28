@@ -1,0 +1,16 @@
+# @package _global_
+
+# conf/experiment/eval/fast_detect_gpt_simple.yaml
+defaults:
+  - override /detector: fast_detect_gpt
+  - override /hardware: single_gpu
+  - override /dataset: aprdb
+
+
+dataset:
+  with_pdf: False
+
+hardware:
+  device: "cuda:0"
+
+name: "detect_gpt_gpu1"

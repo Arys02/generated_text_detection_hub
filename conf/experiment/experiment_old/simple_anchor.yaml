@@ -1,0 +1,9 @@
+defaults:
+  - dataset/aprbd@dataset: aprdb_tt_test
+  - detector/cristal_anchor@detector: cristal_anchor_1
+  - data_loader: 1_4_true
+  - _self_
+
+name: "simple test with cristal anchor detector and small database"
+device: "cuda"
+seed: 42
