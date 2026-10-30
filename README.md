@@ -88,60 +88,7 @@ The project article has no public reference yet; a citation entry will be added 
 ### Related work cited by this repository
 
 ```bibtex
-@inproceedings{la-cava-tagarelli-2025-openturingbench,
-    title = "{O}pen{T}uring{B}ench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
-    author = "La Cava, Lucio  and
-      Tagarelli, Andrea",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
-    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.emnlp-main.1354/",
-    doi = "10.18653/v1/2025.emnlp-main.1354",
-    pages = "26666--26682",
-    ISBN = "979-8-89176-332-6"
-}
 
-@misc{OTB,
-      title={OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution},
-      author={Lucio La Cava and Andrea Tagarelli},
-      year={2025},
-      eprint={2504.11369},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2504.11369},
-}
-
-@inproceedings{LaCava2024ECAI,
-  author       = {Lucio La Cava and
-                  Davide Costa and
-                  Andrea Tagarelli},
-  editor       = {Ulle Endriss and
-                  Francisco S. Melo and
-                  Kerstin Bach and
-                  Alberto Jos{\'{e}} Bugar{\'{\i}}n Diz and
-                  Jose Maria Alonso{-}Moral and
-                  Sen{\'{e}}n Barro and
-                  Fredrik Heintz},
-  title        = {Is Contrasting All You Need? Contrastive Learning for the Detection
-                  and Attribution of AI-generated Text},
-  booktitle    = {{ECAI} 2024 - 27th European Conference on Artificial Intelligence,
-                  19-24 October 2024, Santiago de Compostela, Spain - Including 13th
-                  Conference on Prestigious Applications of Intelligent Systems {(PAIS}
-                  2024)},
-  series       = {Frontiers in Artificial Intelligence and Applications},
-  volume       = {392},
-  pages        = {3179--3186},
-  publisher    = {{IOS} Press},
-  year         = {2024},
-  url          = {https://doi.org/10.3233/FAIA240862},
-  doi          = {10.3233/FAIA240862},
-}
 ```
 
 Ada-DetectGPT, the repository the baselines are ported from:
