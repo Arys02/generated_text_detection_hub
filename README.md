@@ -85,21 +85,5 @@ The code of this repository is released under the [MIT licence](LICENCE). It doe
 
 The project article has no public reference yet; a citation entry will be added when it is available.
 
-### Related work cited by this repository
-
-```bibtex
-
-```
-
-Ada-DetectGPT, the repository the baselines are ported from:
-
-```bibtex
-@inproceedings{zhou2025adadetect,
-  title={AdaDetectGPT: Adaptive Detection of LLM-Generated Text with Statistical Guarantees},
-  author={Hongyi Zhou and Jin Zhu and Pingfan Su and Kai Ye and Ying Yang and Shakeel A O B Gavioli-Akilagun and Chengchun Shi},
-  booktitle={The Thirty-Ninth Annual Conference on Neural Information Processing Systems},
-  year={2025}
-}
-```
 
 Other works whose methods are implemented or embedded: Binoculars, DetectGPT, Fast-DetectGPT, Sem-Detect (Duarte et al., arXiv 2605.21713) and the AI Peer Review Detection Benchmark (arXiv 2502.19614). Their BibTeX entries are in [doc/references.bib](doc/references.bib) (`hans2024spotting`, `mitchell2023detectgpt`, `bao2024fast`, `duarte2026semdetect`, `yu2026your`).
